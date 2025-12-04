@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gestão na Palma da Mão - Masterclass</title>
+  
+   <!-- 1. Tailwind CSS (O motor visual) -->
+   <script src="https://cdn.tailwindcss.com"></script>
+  
+   <!-- 2. Ícones Lucide -->
+   <script src="https://unpkg.com/lucide@latest"></script>
+  
+   <!-- 3. Fontes Premium -->
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+   <style>
+       body { font-family: 'Inter', sans-serif; }
+       h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+       .gold-gradient { background: linear-gradient(to right, #fbbf24, #d97706); }
+       .text-gold { color: #f59e0b; }
+   </style>
+</head>
+<body class="bg-slate-50 text-slate-300 antialiased">
+
+
+   <!-- HERO SECTION -->
+   <header class="bg-slate-950 relative overflow-hidden min-h-screen flex flex-col justify-center items-center text-center py-20 px-6">
+       <!-- Efeito de Fundo -->
+       <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay"></div>
+       <div class="absolute inset-0 bg-gradient-to-b from-slate-950 via-slate-900/90 to-slate-950"></div>
+
+
+       <div class="relative z-10 max-w-4xl mx-auto space-y-8">
+           <div class="inline-block px-4 py-1 border border-amber-500/30 rounded-full bg-amber-500/10 backdrop-blur-sm mb-4">
+               <span class="text-amber-400 text-sm font-semibold tracking-widest uppercase">Masterclass Exclusiva para Empresários</span>
+           </div>
+
+
+           <h1 class="text-4xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">
+               PARE DE "BRINCAR" DE EMPRESÁRIO E COMECE A VER <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-amber-600">A COR DO SEU DINHEIRO</span>
+           </h1>
+
+
+           <p class="text-lg md:text-2xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
+               Descubra como organizar o caos, estancar o prejuízo e ter <strong class="text-white">controle total do seu negócio</strong> usando apenas o celular — mesmo que hoje você seja uma "euquipe".
+           </p>
+
+
+           <div class="flex flex-col md:flex-row items-center justify-center gap-6 py-6 text-sm font-medium tracking-wide text-amber-500">
+               <div class="flex items-center gap-2">
+                   <i data-lucide="calendar" class="w-5 h-5"></i>
+                   <span>DATA: 25 DE OUTUBRO</span>
+               </div>
+               <div class="hidden md:block w-px h-4 bg-slate-700"></div>
+               <div class="flex items-center gap-2">
+                   <i data-lucide="clock" class="w-5 h-5"></i>
+                   <span>HORÁRIO: 20:00H</span>
+               </div>
+           </div>
+
+
+           <div class="pt-4">
+               <!-- BOTÃO QUE LEVA PARA A PÁGINA DE OBRIGADO -->
+               <!-- Importante: certifique-se que o outro arquivo se chama 'obrigado.html' -->
+               <a href="obrigado.html" class="gold-gradient inline-block hover:brightness-110 transition-all duration-300 text-slate-950 font-bold py-5 px-10 rounded-lg text-lg md:text-xl shadow-[0_0_20px_rgba(245,158,11,0.3)] transform hover:-translate-y-1">
+                   QUERO RESERVAR MEU LUGAR GRATUITAMENTE
+               </a>
+               <p class="mt-4 text-xs text-slate-500 uppercase tracking-wider">
+                   Junte-se a +2.000 empreendedores inscritos
+               </p>
+           </div>
+       </div>
+   </header>
+
+
+   <!-- PROBLEMA (P.A.S.) -->
+   <section class="bg-white text-slate-800 py-20 px-6 md:px-12 lg:px-24">
+       <div class="max-w-4xl mx-auto">
+           <div class="text-center mb-12">
+               <h2 class="text-3xl md:text-5xl text-slate-900 mb-6 font-bold">
+                   A sua empresa está te <span class="text-red-700">escravizando?</span>
+               </h2>
+               <div class="w-24 h-1 bg-red-700 mx-auto"></div>
+           </div>
+
+
+           <div class="space-y-8 text-lg leading-relaxed text-slate-600 text-justify md:text-left">
+               <p><strong>Vamos ser brutalmente honestos por um minuto.</strong></p>
+               <p>Você abriu seu negócio buscando liberdade. Queria ser dono do próprio nariz, fazer seus horários e construir patrimônio. Mas a realidade bateu na porta e ela foi cruel.</p>
+              
+               <div class="grid md:grid-cols-2 gap-8 my-10">
+                   <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-900 shadow-sm">
+                       <i data-lucide="alert-triangle" class="w-8 h-8 text-slate-900 mb-4"></i>
+                       <h3 class="font-bold text-xl mb-2 text-slate-900">Operação Dependente</h3>
+                       <p>Hoje, você é o primeiro a chegar e o último a sair. Você não tem funcionários, tem "ajudantes", porque se você virar as costas por 10 minutos, a operação para.</p>
+                   </div>
+                   <div class="bg-slate-50 p-6 rounded-xl border-l-4 border-slate-900 shadow-sm">
+                       <i data-lucide="shield-check" class="w-8 h-8 text-slate-900 mb-4"></i>
+                       <h3 class="font-bold text-xl mb-2 text-slate-900">Cegueira Financeira</h3>
+                       <p>Você mistura as contas de casa com as da empresa. Paga boleto com o dinheiro que entrou hoje, rezando para entrar mais amanhã.</p>
+                   </div>
+               </div>
+
+
+               <p class="font-medium text-slate-800 italic border-l-2 border-amber-500 pl-4">
+                   Isso não é gestão. Isso é sobrevivência. É um jogo de azar onde a banca (o mercado) sempre ganha.
+               </p>
+               <p class="text-xl font-bold text-slate-900">
+                   Você não precisa de mais complexidade. Você precisa de clareza.
+               </p>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- MECANISMO ÚNICO -->
+   <section class="bg-slate-900 text-white py-20 px-6 relative overflow-hidden">
+       <!-- Formas Abstratas -->
+       <div class="absolute top-0 right-0 w-64 h-64 bg-amber-600/10 rounded-full blur-3xl"></div>
+       <div class="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl"></div>
+
+
+       <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+           <div class="md:w-1/2 space-y-6">
+               <h2 class="text-3xl md:text-5xl mb-4 font-bold">
+                   O Fim da <span class="text-amber-500">"Gestão Intuitiva"</span>
+               </h2>
+               <p class="text-slate-400">
+                   O motivo pelo qual 60% das empresas fecham em 5 anos não é "falta de vendas". É falta de gestão. O problema é que você tenta gerir seu negócio na base do "eu acho".
+               </p>
+               <ul class="space-y-3 text-slate-300">
+                   <li class="flex items-center gap-3"><span class="text-red-500">✕</span> "Eu acho que deu lucro."</li>
+                   <li class="flex items-center gap-3"><span class="text-red-500">✕</span> "Eu acho que dá pra tirar um pró-labore."</li>
+                   <li class="flex items-center gap-3"><span class="text-red-500">✕</span> "Eu acho que o preço está bom."</li>
+               </ul>
+               <div class="inline-block bg-slate-800 p-6 rounded-lg border border-slate-700 mt-4">
+                   <h3 class="text-amber-500 font-bold mb-2 flex items-center gap-2">
+                       <i data-lucide="smartphone" class="w-5 h-5"></i>
+                       Controle Simplificado
+                   </h3>
+                   <p class="text-sm text-slate-400">
+                       Vou te mostrar como transformar seu celular no centro de comando da sua empresa. Rastreie cada centavo e precifique sem medo.
+                   </p>
+               </div>
+           </div>
+          
+           <div class="md:w-1/2 flex justify-center">
+               <!-- Arte Abstrata do Celular -->
+               <div class="relative w-72 h-[500px] bg-slate-950 border-8 border-slate-800 rounded-[3rem] shadow-2xl flex flex-col items-center justify-center p-6 overflow-hidden">
+                   <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-slate-950"></div>
+                   <div class="relative z-10 w-full space-y-4">
+                       <div class="h-24 w-full bg-slate-800/50 rounded-lg animate-pulse"></div>
+                       <div class="flex gap-2">
+                           <div class="h-32 w-1/2 bg-amber-600/20 border border-amber-600/30 rounded-lg flex flex-col justify-center items-center">
+                               <i data-lucide="trending-up" class="text-amber-500 w-8 h-8 mb-2"></i>
+                               <span class="text-amber-500 text-xs font-bold">+24% Lucro</span>
+                           </div>
+                           <div class="h-32 w-1/2 bg-slate-800/50 rounded-lg"></div>
+                       </div>
+                       <div class="h-12 w-full bg-slate-800/50 rounded-lg"></div>
+                       <div class="h-12 w-full bg-slate-800/50 rounded-lg"></div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- CONTEÚDO E BÔNUS -->
+   <section class="bg-slate-50 py-20 px-6 md:px-12 lg:px-24">
+       <div class="max-w-5xl mx-auto">
+           <div class="text-center mb-16">
+               <h2 class="text-3xl md:text-5xl text-slate-900 mb-4 font-bold">O Plano de Resgate</h2>
+               <p class="text-slate-600 max-w-2xl mx-auto">Neste evento gratuito, eu vou abrir a caixa preta da gestão eficiente.</p>
+           </div>
+
+
+           <div class="grid md:grid-cols-3 gap-8 mb-16">
+               <!-- Card 1 -->
+               <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-amber-500">
+                   <div class="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mb-6">
+                       <span class="text-amber-600 font-bold text-xl">1</span>
+                   </div>
+                   <h3 class="text-xl font-bold text-slate-900 mb-3">O Raio-X Financeiro</h3>
+                   <p class="text-slate-600 text-sm">Como separar de vez o CPF do CNPJ e saber exatamente qual é o seu lucro real.</p>
+               </div>
+               <!-- Card 2 -->
+               <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-amber-500">
+                   <div class="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mb-6">
+                       <span class="text-amber-600 font-bold text-xl">2</span>
+                   </div>
+                   <h3 class="text-xl font-bold text-slate-900 mb-3">A Rotina de 15 Minutos</h3>
+                   <p class="text-slate-600 text-sm">O checklist diário para gerir sua empresa pelo celular enquanto toma café.</p>
+               </div>
+               <!-- Card 3 -->
+               <div class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-amber-500">
+                   <div class="bg-amber-100 w-12 h-12 rounded-full flex items-center justify-center mb-6">
+                       <span class="text-amber-600 font-bold text-xl">3</span>
+                   </div>
+                   <h3 class="text-xl font-bold text-slate-900 mb-3">A Máquina de Vendas</h3>
+                   <p class="text-slate-600 text-sm">Como parar de vender fiado e criar um fluxo de caixa previsível.</p>
+               </div>
+           </div>
+
+
+           <!-- Caixa de Bônus -->
+           <div class="bg-slate-900 rounded-2xl p-8 md:p-12 relative overflow-hidden text-center">
+               <div class="relative z-10">
+                   <h3 class="text-2xl md:text-3xl text-white font-bold mb-8">Bônus Exclusivos <span class="text-amber-500">(Apenas Ao Vivo)</span></h3>
+                   <div class="grid md:grid-cols-2 gap-6 text-left max-w-3xl mx-auto mb-10">
+                       <div class="flex gap-4 p-4 bg-white/5 rounded-lg border border-white/10">
+                           <i data-lucide="check-circle" class="text-amber-500 w-8 h-8 shrink-0"></i>
+                           <div>
+                               <h4 class="text-white font-bold">Calculadora de Precificação</h4>
+                               <p class="text-slate-400 text-sm">Para você nunca mais pagar para trabalhar.</p>
+                           </div>
+                       </div>
+                       <div class="flex gap-4 p-4 bg-white/5 rounded-lg border border-white/10">
+                           <i data-lucide="check-circle" class="text-amber-500 w-8 h-8 shrink-0"></i>
+                           <div>
+                               <h4 class="text-white font-bold">Script Anti-Calote</h4>
+                               <p class="text-slate-400 text-sm">O texto exato para recuperar dinheiro.</p>
+                           </div>
+                       </div>
+                   </div>
+                   <a href="obrigado.html" class="gold-gradient inline-block text-slate-900 font-bold py-4 px-12 rounded-lg text-lg hover:scale-105 transition-transform shadow-lg">
+                       SIM! QUERO SALVAR MINHA EMPRESA
+                   </a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- FECHAMENTO E PREÇO -->
+   <section class="bg-white py-20 px-6 border-t border-slate-100">
+       <div class="max-w-4xl mx-auto text-center">
+           <h2 class="text-3xl md:text-4xl text-slate-900 mb-8 font-bold">Quanto custa continuar no escuro?</h2>
+          
+           <div class="grid md:grid-cols-3 gap-6 mb-12 items-end">
+               <div class="p-6 bg-slate-50 rounded-lg text-slate-500 opacity-70 scale-95">
+                   <h3 class="font-bold mb-2">Consultoria</h3>
+                   <p class="text-lg line-through">R$ 2.500,00</p>
+               </div>
+               <div class="p-6 bg-slate-900 text-white rounded-lg shadow-2xl scale-110 border border-amber-500 relative">
+                   <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-amber-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase">Sua Melhor Opção</div>
+                   <h3 class="font-bold mb-2 text-xl text-amber-400">Gestão na Palma da Mão</h3>
+                   <p class="text-4xl font-bold">R$ 0,00</p>
+                   <p class="text-xs text-slate-400 mt-2">100% Gratuito</p>
+               </div>
+               <div class="p-6 bg-slate-50 rounded-lg text-slate-500 opacity-70 scale-95">
+                   <h3 class="font-bold mb-2">Software</h3>
+                   <p class="text-lg line-through">R$ 500,00/mês</p>
+               </div>
+           </div>
+
+
+           <a href="obrigado.html" class="gold-gradient inline-block w-full md:w-2/3 text-slate-900 font-bold py-5 px-8 rounded-lg text-xl shadow-xl hover:shadow-2xl transition-all">
+               GARANTIR MEU INGRESSO GRATUITO
+           </a>
+       </div>
+   </section>
+
+
+   <!-- FAQ -->
+   <section class="bg-slate-900 py-20 px-6">
+       <div class="max-w-3xl mx-auto">
+           <h2 class="text-3xl text-white text-center mb-12 font-serif">Perguntas Frequentes</h2>
+           <div class="space-y-4" id="faq-container">
+               <!-- FAQ Item 1 -->
+               <div class="border border-slate-700 rounded-lg overflow-hidden bg-slate-800/50">
+                   <button onclick="toggleFaq('faq1')" class="w-full p-5 flex justify-between items-center text-left text-white hover:bg-slate-800 transition-colors">
+                       <span class="font-semibold">Minha empresa é muito pequena, serve para mim?</span>
+                       <i data-lucide="chevron-down" class="text-slate-400"></i>
+                   </button>
+                   <div id="faq1" class="hidden p-5 bg-slate-800/30 text-slate-300 border-t border-slate-700 text-sm">
+                       Se você vende qualquer produto ou serviço e entra dinheiro na sua conta, serve para você. Na verdade, é obrigatório para quem é pequeno.
+                   </div>
+               </div>
+                <!-- FAQ Item 2 -->
+                <div class="border border-slate-700 rounded-lg overflow-hidden bg-slate-800/50">
+                   <button onclick="toggleFaq('faq2')" class="w-full p-5 flex justify-between items-center text-left text-white hover:bg-slate-800 transition-colors">
+                       <span class="font-semibold">Eu sou péssimo com tecnologia e números.</span>
+                       <i data-lucide="chevron-down" class="text-slate-400"></i>
+                   </button>
+                   <div id="faq2" class="hidden p-5 bg-slate-800/30 text-slate-300 border-t border-slate-700 text-sm">
+                       Ótimo. O método foi criado justamente para quem odeia matemática financeira. Se sabe usar WhatsApp, consegue aplicar.
+                   </div>
+               </div>
+                <!-- FAQ Item 3 -->
+                <div class="border border-slate-700 rounded-lg overflow-hidden bg-slate-800/50">
+                   <button onclick="toggleFaq('faq3')" class="w-full p-5 flex justify-between items-center text-left text-white hover:bg-slate-800 transition-colors">
+                       <span class="font-semibold">Vai ficar gravado?</span>
+                       <i data-lucide="chevron-down" class="text-slate-400"></i>
+                   </button>
+                   <div id="faq3" class="hidden p-5 bg-slate-800/30 text-slate-300 border-t border-slate-700 text-sm">
+                       Não garantimos gravação. Priorize o seu negócio e esteja ao vivo.
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+   <footer class="bg-slate-950 text-slate-500 py-8 px-6 text-center text-sm border-t border-slate-900">
+       <p>Copyright © 2024 - Todos os direitos reservados.</p>
+       <div class="mt-4 flex items-center justify-center gap-2 text-xs opacity-50">
+           <i data-lucide="lock" class="w-3 h-3"></i>
+           <span>Site Seguro & Verificado</span>
+       </div>
+   </footer>
+
+
+   <!-- Scripts -->
+   <script>
+       // Ativar ícones
+       lucide.createIcons();
+
+
+       // Lógica do FAQ
+       function toggleFaq(id) {
+           const content = document.getElementById(id);
+           if (content.classList.contains('hidden')) {
+               content.classList.remove('hidden');
+           } else {
+               content.classList.add('hidden');
+           }
+       }
+   </script>
+</body>
+</html>
